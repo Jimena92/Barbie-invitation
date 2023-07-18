@@ -1,0 +1,234 @@
+.principal {
+  font-family: "Arial", sans-serif;
+  background-image: url("./barbie2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0 20px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+  max-width: 80%; 
+}
+
+/* Estilos generales */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0d0e8; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-container {
+  font-size: 80px;
+  color: #e9d2de; /* Rosa Barbie */
+  font-family: 'Pinyon Script', cursive; /* Fuente similar a la de Barbie */
+  text-shadow: 2px 2px 4px rgb(255, 20, 147); /* Efecto de sombra */
+}
+
+/* Estilos para el recuadro del título */
+.title-container {
+  background-color: rgba(255, 255, 255, 0.7); /* Blanco transparente (aumentamos la opacidad) */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; /* Aumentamos el margen inferior para dar más distancia con los botones */
+}
+
+/* Estilos para el título principal */
+h1 {
+  font-size: 36px;
+  color: #ff69b4;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Estilos para los botones de opción */
+.btn-container {
+  text-align: center;
+}
+
+.btn-yes, .btn-no {
+  font-size: 24px;
+  color: #fff;
+  background-color: #ff69b4;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+/* Estilos para los botones al pasar el cursor */
+.btn-yes:hover, .btn-no:hover {
+  background-color: #ff1493;
+  transform: scale(1.05);
+}
+
+/* Estilos para la frase boletos */
+.frase-boletos {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ff69b4; /* Rosa Barbie */
+  background-color: #fff; /* Blanco */
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 60px; /* Espacio entre la frase y las imágenes */
+}
+
+/* Estilos para el contenedor de las imágenes */
+.yes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Permitir que las imágenes se envuelvan en pantallas pequeñas */
+}
+
+/* Estilos para las imágenes */
+.margot-gif,
+.img {
+  width: 30%; /* Ajustar el tamaño del gif y la imagen según el contenedor */
+  margin: 15px; /* Espacio entre las imágenes */
+}
+
+/* Estilos para el contenedor principal */
+.boletos-container,
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ocupa el 100% del alto de la ventana */
+  background-color: #f0d0e8; /* Rosa claro */
+  margin: 0; /* Eliminamos los márgenes para centrarlo */
+  padding: 0; /* Eliminamos el relleno para centrarlo */
+  max-width: 80%; /* Limitar el ancho máximo del contenedor */
+  margin: 0 auto; /* Centramos el contenedor horizontalmente */
+}
+
+/* Estilos para el contenedor del gif */
+.gif-container {
+  text-align: center;
+  margin-bottom: 20px; /* Espacio entre el gif y el cuadro no-container */
+}
+
+.gif {
+  max-width: 100%; /* Ajustar el tamaño del gif según el contenedor */
+}
+
+/* Estilos para el contenedor de la opción incorrecta */
+.no-container {
+  text-align: center;
+  background-color: #ffe4e1; /* Color rosa claro para el fondo */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 80%; /* Limitar el ancho del cuadro para mantener el texto legible en dispositivos grandes */
+}
+
+.no-header {
+  font-size: 24px;
+  color: #ff1493; /* Rosa Barbie */
+  margin-bottom: 10px;
+}
+
+.no-message {
+  font-size: 18px;
+  color: #ff69b4; /* Rosa Barbie */
+}
+
+/* Media queries para hacer la página responsive */
+@media screen and (max-width: 768px) {
+  /* Estilos para pantallas pequeñas (hasta 768px) */
+  .principal {
+    font-family: "Arial", sans-serif;
+    background-image: url("./movil-wall.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0 20px; /* Añadir un padding horizontal de 20px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar elementos horizontalmente */
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    max-width: 80%; /* Reducir el ancho máximo del contenedor */
+  }
+  
+  h1 {
+    font-size: 28px; /* Tamaño de fuente más pequeño para el título principal */
+  }
+
+  .btn-yes, .btn-no {
+    font-size: 20px; /* Tamaño de fuente más pequeño para los botones */
+  }
+
+  .frase-boletos {
+    font-size: 18px; /* Tamaño de fuente más pequeño para la frase boletos */
+  }
+
+  .margot-gif,
+  .img {
+    width: 45%; /* Ajustar el tamaño del gif y la imagen en pantallas pequeñas */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Estilos para pantallas muy pequeñas (hasta 480px) */
+  .principal {
+    font-family: "Arial", sans-serif;
+    background-image: url("./movil-wall.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0 20px; /* Añadir un padding horizontal de 20px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar elementos horizontalmente */
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    max-width: 80%; /* Reducir el ancho máximo del contenedor */
+  }
+  h1 {
+    font-size: 24px; /* Tamaño de fuente más pequeño para el título principal */
+  }
+
+  .btn-yes, .btn-no {
+    font-size: 18px;
+  }
+}
